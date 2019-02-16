@@ -14,6 +14,7 @@ class ViewController: UIViewController, ARSCNViewDelegate {
 
     @IBOutlet var sceneView: ARSCNView!
     
+    var navTitle = ""
     
     private var currentAngleY: Float = 0.0
     
@@ -33,6 +34,8 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         let rotate = UIRotationGestureRecognizer(target: self, action:     #selector(rotateNode(_:)))
         
         sceneView.addGestureRecognizer(rotate)
+        
+        navigationItem.title = navTitle
     }
     
     override func viewWillAppear(_ animated: Bool) {

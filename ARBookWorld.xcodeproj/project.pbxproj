@@ -13,6 +13,7 @@
 		4687E32722189E5700B8161F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4687E32522189E5700B8161F /* Main.storyboard */; };
 		4687E32922189E5900B8161F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4687E32822189E5900B8161F /* Assets.xcassets */; };
 		4687E32C22189E5900B8161F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4687E32A22189E5900B8161F /* LaunchScreen.storyboard */; };
+		4687E3342218A02100B8161F /* BooksTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4687E3332218A02100B8161F /* BooksTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		4687E32822189E5900B8161F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4687E32B22189E5900B8161F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4687E32D22189E5900B8161F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4687E3332218A02100B8161F /* BooksTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				4687E31F22189E5700B8161F /* AppDelegate.swift */,
 				4687E32122189E5700B8161F /* art.scnassets */,
 				4687E32322189E5700B8161F /* ViewController.swift */,
+				4687E3332218A02100B8161F /* BooksTableViewController.swift */,
 				4687E32522189E5700B8161F /* Main.storyboard */,
 				4687E32822189E5900B8161F /* Assets.xcassets */,
 				4687E32A22189E5900B8161F /* LaunchScreen.storyboard */,
@@ -141,6 +144,7 @@
 			files = (
 				4687E32422189E5700B8161F /* ViewController.swift in Sources */,
 				4687E32022189E5700B8161F /* AppDelegate.swift in Sources */,
+				4687E3342218A02100B8161F /* BooksTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
