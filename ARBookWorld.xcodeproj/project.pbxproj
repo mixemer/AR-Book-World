@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		09062898533B6F7C573C8423 /* Pods_ARBookWorld.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6196A57ED39E54D262BBDBF7 /* Pods_ARBookWorld.framework */; };
 		4687E32022189E5700B8161F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4687E31F22189E5700B8161F /* AppDelegate.swift */; };
 		4687E32222189E5700B8161F /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 4687E32122189E5700B8161F /* art.scnassets */; };
 		4687E32422189E5700B8161F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4687E32322189E5700B8161F /* ViewController.swift */; };
@@ -14,6 +15,7 @@
 		4687E32922189E5900B8161F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4687E32822189E5900B8161F /* Assets.xcassets */; };
 		4687E32C22189E5900B8161F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4687E32A22189E5900B8161F /* LaunchScreen.storyboard */; };
 		4687E3342218A02100B8161F /* BooksTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4687E3332218A02100B8161F /* BooksTableViewController.swift */; };
+		4687E3362218AA9A00B8161F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4687E3352218AA9900B8161F /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,10 @@
 		4687E32B22189E5900B8161F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4687E32D22189E5900B8161F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4687E3332218A02100B8161F /* BooksTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksTableViewController.swift; sourceTree = "<group>"; };
+		4687E3352218AA9900B8161F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		6196A57ED39E54D262BBDBF7 /* Pods_ARBookWorld.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ARBookWorld.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C23BAE21BDA6241EF76F0362 /* Pods-ARBookWorld.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ARBookWorld.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ARBookWorld/Pods-ARBookWorld.debug.xcconfig"; sourceTree = "<group>"; };
+		F3893BBCCA3C6E62A26CE05F /* Pods-ARBookWorld.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ARBookWorld.release.xcconfig"; path = "Pods/Target Support Files/Pods-ARBookWorld/Pods-ARBookWorld.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +39,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				09062898533B6F7C573C8423 /* Pods_ARBookWorld.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		00FCA2AC9ACF4BA4B62B240A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C23BAE21BDA6241EF76F0362 /* Pods-ARBookWorld.debug.xcconfig */,
+				F3893BBCCA3C6E62A26CE05F /* Pods-ARBookWorld.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		4687E31322189E5700B8161F = {
 			isa = PBXGroup;
 			children = (
 				4687E31E22189E5700B8161F /* ARBookWorld */,
 				4687E31D22189E5700B8161F /* Products */,
+				00FCA2AC9ACF4BA4B62B240A /* Pods */,
+				B16CF92138B291E9C662BDAB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -66,8 +84,17 @@
 				4687E32822189E5900B8161F /* Assets.xcassets */,
 				4687E32A22189E5900B8161F /* LaunchScreen.storyboard */,
 				4687E32D22189E5900B8161F /* Info.plist */,
+				4687E3352218AA9900B8161F /* GoogleService-Info.plist */,
 			);
 			path = ARBookWorld;
+			sourceTree = "<group>";
+		};
+		B16CF92138B291E9C662BDAB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6196A57ED39E54D262BBDBF7 /* Pods_ARBookWorld.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -77,9 +104,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4687E33022189E5900B8161F /* Build configuration list for PBXNativeTarget "ARBookWorld" */;
 			buildPhases = (
+				A378B7FF4DE52ABD4112D1B5 /* [CP] Check Pods Manifest.lock */,
 				4687E31822189E5700B8161F /* Sources */,
 				4687E31922189E5700B8161F /* Frameworks */,
 				4687E31A22189E5700B8161F /* Resources */,
+				864C76AC8E8B65ACBE1F7175 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -130,12 +159,72 @@
 			files = (
 				4687E32222189E5700B8161F /* art.scnassets in Resources */,
 				4687E32C22189E5900B8161F /* LaunchScreen.storyboard in Resources */,
+				4687E3362218AA9A00B8161F /* GoogleService-Info.plist in Resources */,
 				4687E32922189E5900B8161F /* Assets.xcassets in Resources */,
 				4687E32722189E5700B8161F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		864C76AC8E8B65ACBE1F7175 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ARBookWorld/Pods-ARBookWorld-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/ChameleonFramework/ChameleonFramework.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/SwipeCellKit/SwipeCellKit.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ChameleonFramework.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwipeCellKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ARBookWorld/Pods-ARBookWorld-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A378B7FF4DE52ABD4112D1B5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ARBookWorld-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4687E31822189E5700B8161F /* Sources */ = {
@@ -288,6 +377,7 @@
 		};
 		4687E33122189E5900B8161F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C23BAE21BDA6241EF76F0362 /* Pods-ARBookWorld.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -306,6 +396,7 @@
 		};
 		4687E33222189E5900B8161F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F3893BBCCA3C6E62A26CE05F /* Pods-ARBookWorld.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
