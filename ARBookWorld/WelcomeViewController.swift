@@ -33,10 +33,31 @@ class WelcomeViewController: UIViewController {
     
     
     @IBAction func signInButtonTapped(_ sender: UIButton) {
+        SVProgressHUD.show()
         
-        // if firebase, then perform segue
-        
-        performSegue(withIdentifier: "toMyBooks", sender: self)
+        Auth.auth().signIn(withEmail: emailTextField.text!, password: passwordTextField.text!) {
+            (resutl, error) in
+            
+            if error != nil {
+                print("Error: \(error!)")
+                
+                self.emailTextField.text = ""
+                self.passwordTextField.text = ""
+                
+                SVProgressHUD.dismiss()
+            }
+            else {
+                print("Login succesful")
+                
+                SVProgressHUD.dismiss()
+                
+                self.emailTextField.text = ""
+                self.passwordTextField.text = ""
+                
+                self.performSegue(withIdentifier: "toMyBooks", sender: self)
+            }
+            
+        }
     }
     
     
