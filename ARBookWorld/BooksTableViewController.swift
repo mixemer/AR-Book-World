@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class BooksTableViewController: UITableViewController {
     
@@ -18,13 +19,12 @@ class BooksTableViewController: UITableViewController {
         super.viewDidLoad()
         
         tableView.separatorStyle = .none
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        logOut()
+    }
+    
 
     // MARK: - Table view data source
 
@@ -64,6 +64,17 @@ class BooksTableViewController: UITableViewController {
         
         if let index = tableCellIndex {
             destinationVC.navTitle = bookNames[index]
+        }
+    }
+    
+    func logOut() {
+        do {
+            try Auth.auth().signOut()
+//
+//            navigationController?.popToRootViewController(animated: true)
+        }
+        catch {
+            print("Error: there was a problem  signing out")
         }
     }
 

@@ -98,6 +98,37 @@ class ViewController: UIViewController, ARSCNViewDelegate {
                     }
                 }
             }
+            
+            if imageAnchor.referenceImage.name == "dino" {
+                if let pokeScene = SCNScene(named: "art.scnassets/dino.scn") {
+                    
+                    if let pokeNode = pokeScene.rootNode.childNodes.first {
+                        
+                        //pokeNode.eulerAngles.x = .pi / 2
+                        
+                        planeNode.addChildNode(pokeNode)
+                        
+                        trackedNode = planeNode
+                        
+                    }
+                }
+            }
+            
+            if imageAnchor.referenceImage.name == "heart" {
+                if let pokeScene = SCNScene(named: "art.scnassets/Heart.scn") {
+                    
+                    if let pokeNode = pokeScene.rootNode.childNodes.first {
+                        
+                        //pokeNode.eulerAngles.x = .pi / 2
+                        
+                        planeNode.addChildNode(pokeNode)
+                        
+                        trackedNode = planeNode
+                        
+                    }
+                }
+            }
+            
         }
         return node
     }

@@ -5,7 +5,13 @@
   },
   "resources" : [
     {
+      "filename" : "dino.arreferenceimage"
+    },
+    {
       "filename" : "eevee-card.arreferenceimage"
+    },
+    {
+      "filename" : "heart.arreferenceimage"
     },
     {
       "filename" : "oddish-card.arreferenceimage"

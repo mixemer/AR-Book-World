@@ -114,7 +114,7 @@
                                                         <rect key="frame" x="0.0" y="61" width="345" height="58"/>
                                                         <nil key="textColor"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                                        <textInputTraits key="textInputTraits"/>
+                                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                                     </textField>
                                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="LP4-G1-kvL">
                                                         <rect key="frame" x="0.0" y="122" width="345" height="57.5"/>
