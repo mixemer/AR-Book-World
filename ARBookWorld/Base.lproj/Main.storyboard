@@ -71,7 +71,7 @@
             </objects>
             <point key="canvasLocation" x="1760.8" y="133.5832083958021"/>
         </scene>
-        <!--Welcome View Controller-->
+        <!--Welcome-->
         <scene sceneID="b8J-bR-WLo">
             <objects>
                 <viewController id="zEW-hN-aHv" customClass="WelcomeViewController" customModule="ARBookWorld" customModuleProvider="target" sceneMemberID="viewController">
@@ -104,7 +104,7 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="bfk-aG-huC">
                                                 <rect key="frame" x="15" y="0.0" width="345" height="301.5"/>
                                                 <subviews>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="User name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DXJ-nE-gu7">
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DXJ-nE-gu7">
                                                         <rect key="frame" x="0.0" y="0.0" width="345" height="58"/>
                                                         <nil key="textColor"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
@@ -124,13 +124,16 @@
                                                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                                                 <state key="normal" title="Sign in"/>
                                                                 <connections>
-                                                                    <segue destination="3YE-zl-c7r" kind="show" id="SM8-eA-9Ec"/>
+                                                                    <action selector="signInButtonTapped:" destination="zEW-hN-aHv" eventType="touchUpInside" id="enF-xf-RU8"/>
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bMs-jn-9aa" userLabel="Sign up">
                                                                 <rect key="frame" x="175" y="0.0" width="170" height="57.5"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                                                 <state key="normal" title="Sign up"/>
+                                                                <connections>
+                                                                    <action selector="signUpButtonTapped:" destination="zEW-hN-aHv" eventType="touchUpInside" id="HC7-d1-meB"/>
+                                                                </connections>
                                                             </button>
                                                         </subviews>
                                                     </stackView>
@@ -165,7 +168,12 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="BrO-Rc-HsU"/>
                     </view>
-                    <navigationItem key="navigationItem" id="c1p-SM-7PY"/>
+                    <navigationItem key="navigationItem" title="Welcome" id="c1p-SM-7PY"/>
+                    <connections>
+                        <outlet property="emailTextField" destination="DXJ-nE-gu7" id="scI-nv-3lj"/>
+                        <outlet property="passwordTextField" destination="Fku-zo-x2O" id="qRj-9G-EDT"/>
+                        <segue destination="3YE-zl-c7r" kind="show" identifier="toMyBooks" id="cXv-FH-hnf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="J2n-la-R0L" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
