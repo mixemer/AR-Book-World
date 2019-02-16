@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		09062898533B6F7C573C8423 /* Pods_ARBookWorld.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6196A57ED39E54D262BBDBF7 /* Pods_ARBookWorld.framework */; };
+		4634DCBF2218B42E00A23F04 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4634DCBE2218B42E00A23F04 /* WelcomeViewController.swift */; };
 		4687E32022189E5700B8161F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4687E31F22189E5700B8161F /* AppDelegate.swift */; };
 		4687E32222189E5700B8161F /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 4687E32122189E5700B8161F /* art.scnassets */; };
 		4687E32422189E5700B8161F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4687E32322189E5700B8161F /* ViewController.swift */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4634DCBE2218B42E00A23F04 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		4687E31C22189E5700B8161F /* ARBookWorld.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ARBookWorld.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4687E31F22189E5700B8161F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4687E32122189E5700B8161F /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
@@ -81,6 +83,7 @@
 				4687E32322189E5700B8161F /* ViewController.swift */,
 				4687E3332218A02100B8161F /* BooksTableViewController.swift */,
 				4687E32522189E5700B8161F /* Main.storyboard */,
+				4634DCBE2218B42E00A23F04 /* WelcomeViewController.swift */,
 				4687E32822189E5900B8161F /* Assets.xcassets */,
 				4687E32A22189E5900B8161F /* LaunchScreen.storyboard */,
 				4687E32D22189E5900B8161F /* Info.plist */,
@@ -232,6 +235,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4687E32422189E5700B8161F /* ViewController.swift in Sources */,
+				4634DCBF2218B42E00A23F04 /* WelcomeViewController.swift in Sources */,
 				4687E32022189E5700B8161F /* AppDelegate.swift in Sources */,
 				4687E3342218A02100B8161F /* BooksTableViewController.swift in Sources */,
 			);
