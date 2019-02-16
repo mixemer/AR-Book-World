@@ -42,7 +42,7 @@ class BooksTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "BookCell", for: indexPath)
 
         cell.textLabel?.text = bookNames[indexPath.row]
-        cell.textLabel?.font = UIFont.init(name: "Helvetica", size: 26)
+        cell.textLabel?.font = UIFont.init(name: "Helvetica", size: 22)
         
         return cell
     }
