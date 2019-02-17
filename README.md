@@ -20,10 +20,10 @@ Welcome Page                 |Share your favourite books with the world | View 3
 ## Web App: Runs on everywhere, you only ned a browser
 Welcome Page                 |Share your favourite books with the world | View 3D models of images on your books
 :---------------------------:|:------------------------------:|:------------------------------:
-![](images/Web1.jpg)      |  ![](images/Web6.jpg) | ![](images/Web3.jpg)
+![](images/Web1.jpg)      |  ![](images/Web6.jpg) | ![](images/web3.jpg)
 
 
 
 1                            |  2                             | 3
 :---------------------------:|:------------------------------:|:------------------------------:
-![](images/Skull2.PNG)      |  ![](images/Skull3.PNG)         | ![](images/Heart.PNG)
+![](images/web5.jpg)      |  ![](images/web3.jpg)         | ![](images/Web6.jpg)
