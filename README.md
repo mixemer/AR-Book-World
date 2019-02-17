@@ -6,9 +6,10 @@
 Make books more interactive which creates experiential learning and more engagement within classroom.
 
 
-Welcome Page                 |Share you favourite books with others| My books to see 3d models of images
+Welcome Page                 |Share your favourite books with the world | View 3D models of images on your books
 :---------------------------:|:------------------------------:|:------------------------------:
 ![](images/Welcome.PNG)      |  ![](images/Activity-Feed.PNG) | ![](images/myBooks.PNG)
+
 
 
 1                            |  2                             | 3
