@@ -230,7 +230,16 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="My Feed" id="1AF-sx-0QW">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="Pz0-fu-8Ad"/>
+                        <barButtonItem key="leftBarButtonItem" title="Log out" id="kn6-LY-cIu">
+                            <connections>
+                                <action selector="logOutBarButtonTapped:" destination="T4d-cT-xdf" id="SsQ-4i-gPt"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="Pz0-fu-8Ad">
+                            <connections>
+                                <action selector="addBarButtonTapped:" destination="T4d-cT-xdf" id="1cm-rv-TNd"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qqW-j7-iT5" userLabel="First Responder" sceneMemberID="firstResponder"/>
