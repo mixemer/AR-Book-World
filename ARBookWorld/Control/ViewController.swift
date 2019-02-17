@@ -145,7 +145,7 @@ class ViewController: UIViewController, ARSCNViewDelegate {
                 }
             }
             
-            if imageAnchor.referenceImage.name == "mammoth" {
+            if imageAnchor.referenceImage.name == "mammoth-skull" {
                 if let pokeScene = SCNScene(named: "art.scnassets/mammoth.scn") {
                     
                     if let pokeNode = pokeScene.rootNode.childNodes.first {
