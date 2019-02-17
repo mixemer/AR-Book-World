@@ -17,6 +17,10 @@
 		4687E32C22189E5900B8161F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4687E32A22189E5900B8161F /* LaunchScreen.storyboard */; };
 		4687E3342218A02100B8161F /* BooksTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4687E3332218A02100B8161F /* BooksTableViewController.swift */; };
 		4687E3362218AA9A00B8161F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4687E3352218AA9900B8161F /* GoogleService-Info.plist */; };
+		46B398B92218D8BB006192DB /* FeedMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46B398B82218D8BB006192DB /* FeedMessage.swift */; };
+		46F6B1522218D1C200FC0DAC /* CustomFeed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F6B1502218D1C200FC0DAC /* CustomFeed.swift */; };
+		46F6B1532218D1C200FC0DAC /* CustomFeed.xib in Resources */ = {isa = PBXBuildFile; fileRef = 46F6B1512218D1C200FC0DAC /* CustomFeed.xib */; };
+		46F6B1552218D5A300FC0DAC /* FeedTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F6B1542218D5A300FC0DAC /* FeedTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +35,10 @@
 		4687E32D22189E5900B8161F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4687E3332218A02100B8161F /* BooksTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksTableViewController.swift; sourceTree = "<group>"; };
 		4687E3352218AA9900B8161F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		46B398B82218D8BB006192DB /* FeedMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedMessage.swift; sourceTree = "<group>"; };
+		46F6B1502218D1C200FC0DAC /* CustomFeed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomFeed.swift; sourceTree = "<group>"; };
+		46F6B1512218D1C200FC0DAC /* CustomFeed.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomFeed.xib; sourceTree = "<group>"; };
+		46F6B1542218D5A300FC0DAC /* FeedTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedTableViewController.swift; sourceTree = "<group>"; };
 		6196A57ED39E54D262BBDBF7 /* Pods_ARBookWorld.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ARBookWorld.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C23BAE21BDA6241EF76F0362 /* Pods-ARBookWorld.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ARBookWorld.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ARBookWorld/Pods-ARBookWorld.debug.xcconfig"; sourceTree = "<group>"; };
 		F3893BBCCA3C6E62A26CE05F /* Pods-ARBookWorld.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ARBookWorld.release.xcconfig"; path = "Pods/Target Support Files/Pods-ARBookWorld/Pods-ARBookWorld.release.xcconfig"; sourceTree = "<group>"; };
@@ -79,17 +87,53 @@
 			isa = PBXGroup;
 			children = (
 				4687E31F22189E5700B8161F /* AppDelegate.swift */,
+				46F6B1472218CFBB00FC0DAC /* Model */,
+				46F6B1422218CECD00FC0DAC /* Control */,
+				46F6B1432218CF0100FC0DAC /* View */,
 				4687E32122189E5700B8161F /* art.scnassets */,
-				4687E32322189E5700B8161F /* ViewController.swift */,
-				4687E3332218A02100B8161F /* BooksTableViewController.swift */,
-				4687E32522189E5700B8161F /* Main.storyboard */,
-				4634DCBE2218B42E00A23F04 /* WelcomeViewController.swift */,
-				4687E32822189E5900B8161F /* Assets.xcassets */,
 				4687E32A22189E5900B8161F /* LaunchScreen.storyboard */,
 				4687E32D22189E5900B8161F /* Info.plist */,
 				4687E3352218AA9900B8161F /* GoogleService-Info.plist */,
 			);
 			path = ARBookWorld;
+			sourceTree = "<group>";
+		};
+		46F6B1422218CECD00FC0DAC /* Control */ = {
+			isa = PBXGroup;
+			children = (
+				4687E32322189E5700B8161F /* ViewController.swift */,
+				4687E3332218A02100B8161F /* BooksTableViewController.swift */,
+				4634DCBE2218B42E00A23F04 /* WelcomeViewController.swift */,
+				46F6B1542218D5A300FC0DAC /* FeedTableViewController.swift */,
+			);
+			path = Control;
+			sourceTree = "<group>";
+		};
+		46F6B1432218CF0100FC0DAC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4687E32522189E5700B8161F /* Main.storyboard */,
+				4687E32822189E5900B8161F /* Assets.xcassets */,
+				46F6B14F2218D05500FC0DAC /* Custom Cell */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		46F6B1472218CFBB00FC0DAC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				46B398B82218D8BB006192DB /* FeedMessage.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		46F6B14F2218D05500FC0DAC /* Custom Cell */ = {
+			isa = PBXGroup;
+			children = (
+				46F6B1502218D1C200FC0DAC /* CustomFeed.swift */,
+				46F6B1512218D1C200FC0DAC /* CustomFeed.xib */,
+			);
+			path = "Custom Cell";
 			sourceTree = "<group>";
 		};
 		B16CF92138B291E9C662BDAB /* Frameworks */ = {
@@ -164,6 +208,7 @@
 				4687E32C22189E5900B8161F /* LaunchScreen.storyboard in Resources */,
 				4687E3362218AA9A00B8161F /* GoogleService-Info.plist in Resources */,
 				4687E32922189E5900B8161F /* Assets.xcassets in Resources */,
+				46F6B1532218D1C200FC0DAC /* CustomFeed.xib in Resources */,
 				4687E32722189E5700B8161F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -234,10 +279,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46B398B92218D8BB006192DB /* FeedMessage.swift in Sources */,
 				4687E32422189E5700B8161F /* ViewController.swift in Sources */,
+				46F6B1552218D5A300FC0DAC /* FeedTableViewController.swift in Sources */,
 				4634DCBF2218B42E00A23F04 /* WelcomeViewController.swift in Sources */,
 				4687E32022189E5700B8161F /* AppDelegate.swift in Sources */,
 				4687E3342218A02100B8161F /* BooksTableViewController.swift in Sources */,
+				46F6B1522218D1C200FC0DAC /* CustomFeed.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -54,7 +54,7 @@ class WelcomeViewController: UIViewController {
                 self.emailTextField.text = ""
                 self.passwordTextField.text = ""
                 
-                self.performSegue(withIdentifier: "toMyBooks", sender: self)
+                self.performSegue(withIdentifier: "toMyFeed", sender: self)
             }
             
         }
@@ -79,7 +79,7 @@ class WelcomeViewController: UIViewController {
                 self.emailTextField.text = ""
                 self.passwordTextField.text = ""
                 
-                self.performSegue(withIdentifier: "toMyBooks", sender: self)
+                self.performSegue(withIdentifier: "toMyFeed", sender: self)
             }
         }
     }
