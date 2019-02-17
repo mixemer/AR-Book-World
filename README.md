@@ -14,7 +14,7 @@ Welcome Page                 |Share your favourite books with the world | View 3
 
 1                            |  2                             | 3
 :---------------------------:|:------------------------------:|:------------------------------:
-![](images/Skull2.PNG)      |  ![](images/Skull3.PNG)         | ![](images/Heart.PNG)
+![](images/Skull2.PNG)      |  ![](images/Earth.PNG)         | ![](images/Heart.PNG)
 
 
 ## Web App: Runs on everywhere, you only ned a browser
