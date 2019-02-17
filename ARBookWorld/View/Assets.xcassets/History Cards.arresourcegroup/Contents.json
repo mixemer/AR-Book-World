@@ -14,10 +14,19 @@
       "filename" : "heart.arreferenceimage"
     },
     {
+      "filename" : "mammoth.arreferenceimage"
+    },
+    {
       "filename" : "oddish-card.arreferenceimage"
     },
     {
       "filename" : "skull-card.arreferenceimage"
+    },
+    {
+      "filename" : "triceratops-skull.arreferenceimage"
+    },
+    {
+      "filename" : "world.arreferenceimage"
     }
   ]
 }

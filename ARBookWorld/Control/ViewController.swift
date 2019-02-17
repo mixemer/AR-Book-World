@@ -84,17 +84,33 @@ class ViewController: UIViewController, ARSCNViewDelegate {
             
             node.addChildNode(planeNode)
             
-            if imageAnchor.referenceImage.name == "skull-card" {
+            if imageAnchor.referenceImage.name == "triceratops-skull" {
                 if let pokeScene = SCNScene(named: "art.scnassets/triceratops.scn") {
-                    
+
                     if let pokeNode = pokeScene.rootNode.childNodes.first {
-                        
+
                         //pokeNode.eulerAngles.x = .pi / 2
-                        
+                        pokeNode.geometry?.firstMaterial?.diffuse.contents = UIImage(named: "art.scnassets/triceratops.jpeg")
                         planeNode.addChildNode(pokeNode)
-                        
+
                         trackedNode = planeNode
-                        
+                        navTitle = "Triceratops Skull"
+                    }
+                }
+            }
+            
+            if imageAnchor.referenceImage.name == "world" {
+                if let pokeScene = SCNScene(named: "art.scnassets/earth.scn") {
+
+                    if let pokeNode = pokeScene.rootNode.childNodes.first {
+                        //pokeNode.geometry = SCNSphere(radius: 1)
+                        pokeNode.geometry?.firstMaterial?.diffuse.contents = UIImage(named: "art.scnassets/world.jpg")
+                        //pokeNode.eulerAngles.x = .pi / 2
+
+                        planeNode.addChildNode(pokeNode)
+
+                        trackedNode = planeNode
+                        navTitle = "Earth"
                     }
                 }
             }
@@ -109,7 +125,7 @@ class ViewController: UIViewController, ARSCNViewDelegate {
                         planeNode.addChildNode(pokeNode)
                         
                         trackedNode = planeNode
-                        
+                        navTitle = "Dinozor"
                     }
                 }
             }
@@ -124,11 +140,26 @@ class ViewController: UIViewController, ARSCNViewDelegate {
                         planeNode.addChildNode(pokeNode)
                         
                         trackedNode = planeNode
-                        
+                        navTitle = "Heart"
                     }
                 }
             }
             
+            if imageAnchor.referenceImage.name == "mammoth" {
+                if let pokeScene = SCNScene(named: "art.scnassets/mammoth.scn") {
+                    
+                    if let pokeNode = pokeScene.rootNode.childNodes.first {
+                        
+                        //pokeNode.eulerAngles.x = .pi / 2
+                        
+                        planeNode.addChildNode(pokeNode)
+                        
+                        trackedNode = planeNode
+                        navTitle = "Mammoth Skull"
+                    }
+                }
+            }
+            navigationItem.title = navTitle
         }
         return node
     }
