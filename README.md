@@ -6,8 +6,8 @@
 Make books more interactive which creates experiential learning and more engagement within classroom.
 
 
-1                          |  2
-:-------------------------:|:-------------------------:
-![](FlashChat-image1.png)  |  ![](FlashChat-image2.png)
+1                            |  2
+:---------------------------:|:-----------------------------:
+![](images/Welcome.PNG.PNG)  |  ![](images/Activity Feed.PNG)
 
 
