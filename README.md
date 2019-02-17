@@ -10,8 +10,9 @@ Make books more interactive which creates experiential learning and more engagem
 :---------------------------:|:------------------------------:|:------------------------------:
 ![](images/Welcome.PNG)      |  ![](images/Activity-Feed.PNG) | ![](images/Activity-Feed.PNG)
 
+
 1                            |  2                             | 3
 :---------------------------:|:------------------------------:|:------------------------------:
-![](images/Skull2.PNG)      |  ![](images/Skull3.PNG)         | [](images/Heart.PNG)
+![](images/Skull2.PNG)      |  ![](images/Skull3.PNG)         | ![](images/Heart.PNG)
 
 
