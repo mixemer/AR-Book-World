@@ -1,4 +1,4 @@
-# AR Book World
+# AR Book World. ![](images/logo6.png)
 ## #HackNYU2018
 ### Track: Education
 
