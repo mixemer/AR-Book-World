@@ -1,4 +1,4 @@
-# AR Book World. ![](images/logo6.png {height="24px" width="48px"})
+# AR Book World. <img src="https://github.com/mixemer/AR-Book-World/blob/master/images/logo6.png" width="48">
 ## #HackNYU2018
 ### Track: Education
 
