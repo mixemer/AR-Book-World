@@ -33,14 +33,25 @@
                             <outlet property="delegate" destination="3YE-zl-c7r" id="eJa-ud-3pE"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="My Books" id="Tvo-3z-DRh"/>
+                    <navigationItem key="navigationItem" title="My Books" id="Tvo-3z-DRh">
+                        <barButtonItem key="leftBarButtonItem" title="Log out" id="fe3-X4-cyU">
+                            <connections>
+                                <action selector="logOutBarButtonTapped:" destination="3YE-zl-c7r" id="kBa-mU-7At"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="Mqa-uv-Ouw">
+                            <connections>
+                                <action selector="addBarButtonTapped:" destination="3YE-zl-c7r" id="8sv-T5-xgt"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <segue destination="BV1-FR-VrT" kind="show" identifier="toAR" id="Owq-Xg-hPL"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VRB-8U-yQr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1470" y="1011"/>
+            <point key="canvasLocation" x="1470" y="1460"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tXr-a1-R10">
@@ -69,7 +80,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1470" y="1490"/>
+            <point key="canvasLocation" x="1470" y="2122"/>
         </scene>
         <!--Welcome-->
         <scene sceneID="b8J-bR-WLo">
@@ -206,7 +217,7 @@
             </objects>
             <point key="canvasLocation" x="1470" y="806"/>
         </scene>
-        <!--My Feed-->
+        <!--Book Recommentation-->
         <scene sceneID="wke-Kg-qsG">
             <objects>
                 <tableViewController id="T4d-cT-xdf" customClass="FeedTableViewController" customModule="ARBookWorld" customModuleProvider="target" sceneMemberID="viewController">
@@ -229,7 +240,7 @@
                             <outlet property="delegate" destination="T4d-cT-xdf" id="e9v-dP-lRw"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="My Feed" id="1AF-sx-0QW">
+                    <navigationItem key="navigationItem" title="Book Recommentation" id="1AF-sx-0QW">
                         <barButtonItem key="leftBarButtonItem" title="Log out" id="kn6-LY-cIu">
                             <connections>
                                 <action selector="logOutBarButtonTapped:" destination="T4d-cT-xdf" id="SsQ-4i-gPt"/>

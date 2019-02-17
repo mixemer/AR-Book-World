@@ -11,7 +11,7 @@ import Firebase
 
 class BooksTableViewController: UITableViewController {
     
-    let bookNames = ["History", "Biology"]
+    var bookNames = [String]()
     
     var tableCellIndex: Int?
 
@@ -19,11 +19,10 @@ class BooksTableViewController: UITableViewController {
         super.viewDidLoad()
         
         tableView.separatorStyle = .none
+        
+        retrieveBookNames()
     }
     
-    override func viewWillDisappear(_ animated: Bool) {
-        logOut()
-    }
     
 
     // MARK: - Table view data source
@@ -57,6 +56,52 @@ class BooksTableViewController: UITableViewController {
         performSegue(withIdentifier: "toAR", sender: self)
     }
     
+    func retrieveBookNames() {
+        let bookDB = Database.database().reference().child("books")
+        
+        bookDB.observe(.childAdded)
+        { (snapshot) in
+            let value = snapshot.value as! Dictionary<String, String>
+            let bookName = value["Name"]!
+            
+            self.bookNames.append(bookName)
+            self.tableView.reloadData()
+        }
+        
+    }
+    
+    @IBAction func addBarButtonTapped(_ sender: UIBarButtonItem) {
+        
+        var textField = UITextField()
+        
+        let alert = UIAlertController(title: "Add", message: "", preferredStyle: .alert)
+        let action = UIAlertAction(title: "Add", style: .default) {
+            (alertAction) in
+            
+            let bookNameDB = Database.database().reference().child("books")
+            let nameDictionary = ["Name": textField.text!]
+            
+            bookNameDB.childByAutoId().setValue(nameDictionary) {
+                (error, database) in
+                
+                if error != nil {
+                    print("Error: \(error!)")
+                }
+                else {
+                    print("Book name succesful")
+                }
+                
+            }
+            
+        }
+        
+        alert.addTextField { (field) in
+            textField = field
+        }
+        alert.addAction(action)
+        present(alert, animated: true)
+    }
+    
     
     // Add this for specific text book.
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -67,15 +112,13 @@ class BooksTableViewController: UITableViewController {
         }
     }
     
-    func logOut() {
+    @IBAction func logOutBarButtonTapped(_ sender: UIBarButtonItem) {
         do {
             try Auth.auth().signOut()
-//
-//            navigationController?.popToRootViewController(animated: true)
+            tabBarController?.dismiss(animated: true, completion: nil)
         }
         catch {
             print("Error: there was a problem  signing out")
         }
     }
-
 }
