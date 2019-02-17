@@ -6,8 +6,12 @@
 Make books more interactive which creates experiential learning and more engagement within classroom.
 
 
-1                            |  2
-:---------------------------:|:-----------------------------:
-![](images/Welcome.PNG)  |  ![](images/Activity-Feed.PNG)
+1                            |  2                             | 3
+:---------------------------:|:------------------------------:|:------------------------------:
+![](images/Welcome.PNG)      |  ![](images/Activity-Feed.PNG) | [](images/Activity-Feed.PNG)
+
+1                            |  2                             | 3
+:---------------------------:|:------------------------------:|:------------------------------:
+![](images/Welcome.PNG)      |  ![](images/Activity-Feed.PNG) | [](images/Activity-Feed.PNG)
 
 
