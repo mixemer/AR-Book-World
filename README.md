@@ -1,5 +1,4 @@
-# <img src="https://github.com/mixemer/AR-Book-World/blob/master/images/logo6.png" width="70"> 
-# AR Book World 
+# <img src="https://github.com/mixemer/AR-Book-World/blob/master/images/logo6.png" width="70">   AR Book World 
 ## #HackNYU2019
 ### Track: Education
 
