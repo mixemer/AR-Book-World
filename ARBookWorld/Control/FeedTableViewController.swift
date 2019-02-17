@@ -8,6 +8,7 @@
 
 import UIKit
 import Firebase
+import ChameleonFramework
 
 class FeedTableViewController: UITableViewController {
     
@@ -45,6 +46,18 @@ class FeedTableViewController: UITableViewController {
         
         cell.messageBody.text = feedArray[indexPath.row].message
         cell.senderUsername.text = feedArray[indexPath.row].userName
+        let color1 = UIColor.flatMint()
+        let color2 = UIColor.flatWatermelon()
+        
+        if cell.senderUsername.text == Auth.auth().currentUser?.email as String! {
+            cell.messageBackground.backgroundColor = color1
+            cell.avatarImageView.backgroundColor = color1
+        }
+        else {
+            cell.avatarImageView.backgroundColor = color2
+            cell.messageBackground.backgroundColor = color2
+        }
+        
         cell.avatarImageView.image = UIImage(named: "egg")
 
         return cell

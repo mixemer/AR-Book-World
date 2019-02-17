@@ -51,7 +51,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VRB-8U-yQr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1470" y="1460"/>
+            <point key="canvasLocation" x="886" y="1532"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tXr-a1-R10">
@@ -74,13 +74,14 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="fQZ-KI-GVf"/>
                     </view>
+                    <navigationItem key="navigationItem" largeTitleDisplayMode="never" id="dA3-KX-aE4"/>
                     <connections>
                         <outlet property="sceneView" destination="BrB-h1-WRS" id="5nT-qQ-ynl"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1470" y="2122"/>
+            <point key="canvasLocation" x="886" y="2194"/>
         </scene>
         <!--Welcome-->
         <scene sceneID="b8J-bR-WLo">
@@ -194,10 +195,10 @@
         <scene sceneID="9Hx-Zz-Tah">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Vci-oF-3eW" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="My Books" id="TKs-Ni-2TV"/>
+                    <tabBarItem key="tabBarItem" title="My Books" image="icons8-literature-100" selectedImage="icons8-literature-filled-100" id="TKs-Ni-2TV"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="l0J-D7-rrv">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="l0J-D7-rrv">
+                        <rect key="frame" x="0.0" y="20" width="375" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="barTintColor" red="0.18523699045181274" green="0.28688547015190125" blue="0.37659549713134766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -215,9 +216,38 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Dmn-a3-LS3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1470" y="806"/>
+            <point key="canvasLocation" x="886" y="878"/>
         </scene>
-        <!--Book Recommentation-->
+        <!--My Account-->
+        <scene sceneID="w9m-yg-d8S">
+            <objects>
+                <tableViewController id="pvL-L5-DUL" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="fPs-P2-FKZ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="AccountCell" id="AQ9-Nq-tdX">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="AQ9-Nq-tdX" id="aVR-qx-ook">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="pvL-L5-DUL" id="EjB-U8-oPl"/>
+                            <outlet property="delegate" destination="pvL-L5-DUL" id="x3y-nI-8lw"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="My Account" id="EeR-Xb-zQ9"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GJ5-hN-ElA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2025" y="1594"/>
+        </scene>
+        <!--Activity Feed-->
         <scene sceneID="wke-Kg-qsG">
             <objects>
                 <tableViewController id="T4d-cT-xdf" customClass="FeedTableViewController" customModule="ARBookWorld" customModuleProvider="target" sceneMemberID="viewController">
@@ -240,7 +270,7 @@
                             <outlet property="delegate" destination="T4d-cT-xdf" id="e9v-dP-lRw"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Book Recommentation" id="1AF-sx-0QW">
+                    <navigationItem key="navigationItem" title="Activity Feed" id="1AF-sx-0QW">
                         <barButtonItem key="leftBarButtonItem" title="Log out" id="kn6-LY-cIu">
                             <connections>
                                 <action selector="logOutBarButtonTapped:" destination="T4d-cT-xdf" id="SsQ-4i-gPt"/>
@@ -255,7 +285,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qqW-j7-iT5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="468" y="1011"/>
+            <point key="canvasLocation" x="-196" y="1594"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="f5d-Zl-QlK">
@@ -263,30 +293,35 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="tgR-hP-H2R" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="4Np-uD-qBJ">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
                         <segue destination="DiJ-bH-4Cg" kind="relationship" relationship="viewControllers" id="PwT-sl-j0H"/>
                         <segue destination="Vci-oF-3eW" kind="relationship" relationship="viewControllers" id="yLX-MQ-6ht"/>
+                        <segue destination="IMa-w8-PxY" kind="relationship" relationship="viewControllers" id="YfK-zD-okG"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xhp-Wp-aWI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="886" y="58"/>
         </scene>
-        <!--Feed-->
+        <!--Activity Feed-->
         <scene sceneID="QZP-I1-7Yb">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="DiJ-bH-4Cg" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Feed" id="10q-GU-zHn"/>
+                    <tabBarItem key="tabBarItem" title="Activity Feed" image="icons8-activity-feed-100" selectedImage="icons8-activity-feed-filled-100" id="10q-GU-zHn"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="AXU-k7-KmA">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="AXU-k7-KmA">
+                        <rect key="frame" x="0.0" y="20" width="375" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="barTintColor" red="0.18523699045181274" green="0.28688547015190125" blue="0.37659549713134766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </textAttributes>
                     </navigationBar>
@@ -297,7 +332,42 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="o9M-mc-h0R" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="468" y="805.54722638680664"/>
+            <point key="canvasLocation" x="-196" y="806"/>
+        </scene>
+        <!--Account-->
+        <scene sceneID="QeP-ax-0VX">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="IMa-w8-PxY" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Account" image="icons8-user-account-100" selectedImage="icons8-user-account-filled-100" id="V8S-xc-sof"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="zcp-29-Y0A">
+                        <rect key="frame" x="0.0" y="20" width="375" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" red="0.18523699045181274" green="0.28688547015190125" blue="0.37659549713134766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="pvL-L5-DUL" kind="relationship" relationship="rootViewController" id="mr5-Ms-jMq"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="h61-VV-KRk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2025" y="806"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="icons8-activity-feed-100" width="33" height="33"/>
+        <image name="icons8-activity-feed-filled-100" width="33" height="33"/>
+        <image name="icons8-literature-100" width="33" height="33"/>
+        <image name="icons8-literature-filled-100" width="33" height="33"/>
+        <image name="icons8-user-account-100" width="33" height="33"/>
+        <image name="icons8-user-account-filled-100" width="33" height="33"/>
+    </resources>
 </document>

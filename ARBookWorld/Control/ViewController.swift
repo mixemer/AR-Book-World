@@ -105,7 +105,7 @@ class ViewController: UIViewController, ARSCNViewDelegate {
                     if let pokeNode = pokeScene.rootNode.childNodes.first {
                         //pokeNode.geometry = SCNSphere(radius: 1)
                         pokeNode.geometry?.firstMaterial?.diffuse.contents = UIImage(named: "art.scnassets/world.jpg")
-                        //pokeNode.eulerAngles.x = .pi / 2
+                        pokeNode.eulerAngles.x = .pi / 2
 
                         planeNode.addChildNode(pokeNode)
 
